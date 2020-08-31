@@ -1,0 +1,28 @@
+Connections :
+
+
+Crash sensor        ESP8266
+
+Vcc                 3.3V out
+GND                 GND
+OUT                 D4(GPIO 2)
+
+Crash sensor is connected to the D4 pin which serves as a GPIO(General Purpose I/O) 2
+
+
+
+
+GPS                 ESP8266
+
+Vcc                 3.3V out
+TX                  D7(RXD2)
+RX                  D8(TXD2)
+GND                 GND
+
+GPS module is connected at the third serial port(TXD2, RXD2), as the first serial port
+(TX0, RX0) is used for the USB communication with a PC to show the output and the second 
+serial port's transmitter(TX1) is overlapped with the GPIO2 pin, which has been used for 
+the crash sensor.Given below is the detailed pin diagram of ESP8266;
+
+
+<<Put the pin diagram here>>
