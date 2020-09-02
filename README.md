@@ -4,4 +4,4 @@
 
 ->The crash sensors and the GPS module in the vehicle are interfaced to the microcontroller. The firmware reads the GPS and posts the coordinates to the PHP service on a remote WAMP server, in the event of an accident, which inserts the coordinates into the table in MySQL database.
 
-->Another PHP service retrieves the coordinates from the MySQL database and calls the Firebase Cloud Messaging API to push a notification to the other user. Upon tapping on the notification, the pinpoint location of the crashed vehicle can be seen on the map through Google Maps API, on the android application.
+->Another PHP service retrieves the coordinates from the MySQL database and pushes a notification to the users who monitor the application (eg: police or emergency services department).
